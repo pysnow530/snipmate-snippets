@@ -1,0 +1,6 @@
+snippet class
+	`(expand('%:h') == '.') ? "" : 'package ' . substitute(expand('%:h'), '/', '.', 'g') . ";\n\n\n"`public class `expand('%:t:r')` {
+		public static void main (String [] args) {
+			${1:System.out.println("hello, world!");}
+		}
+	}
